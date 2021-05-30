@@ -1,0 +1,8 @@
+server:
+  port: 9092
+  
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:    config:      server:        git:          uri: https://github.com/100nikhil/config-server
+          clone-on-start: true        default-label: main
